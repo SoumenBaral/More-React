@@ -4,7 +4,6 @@ const AddTask = () => {
     return (
        <section className='addTask'>
             <form>
-                <label htmlFor="task">Task Name : </label>
                 <input type="text" name="task" id="task" placeholder='Task Name ' autoComplete='off' />
                 <button type='submit'>Add Task</button>
 
