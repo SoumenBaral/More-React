@@ -13,6 +13,18 @@
     flex-wrap: wrap;
 }
 
+.addTask .reset{
+    font-size: 18px;
+    background-color: #be3434;
+    color: #ffffff;
+    margin: 10px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
 .addTask label{
     font-size: 20px;
     margin-right: 5px;
