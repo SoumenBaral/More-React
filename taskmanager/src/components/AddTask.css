@@ -1,4 +1,4 @@
-.addtask{
+.addTask{
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -6,19 +6,19 @@
     border-radius: 5px;
 }
 
-.addtask form{
+.addTask form{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.addtask label{
+.addTask label{
     font-size: 20px;
     margin-right: 5px;
 }
 
-.addtask input{
+.addTask input{
     font-size: 18px;
     padding: 7px;
     border: 1px solid #878787;
@@ -27,11 +27,11 @@
     margin: 10px;
 }
 
-.addtask input:focus{
+.addTask input:focus{
     outline: none;
 }
 
-.addtask select{
+.addTask select{
     font-size: 18px;
     padding: 7px;
     border-radius: 5px;
@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 
-.addtask button{
+.addTask button{
     font-size: 18px;
     padding: 7px 10px;
     margin: 10px;
