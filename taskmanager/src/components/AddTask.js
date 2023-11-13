@@ -20,6 +20,9 @@ const AddTask = ({tasks,setTasks}) => {
         if (task.name.length) {
             setTasks([...tasks , task])
         }
+        else{
+            alert("Please add your Task")
+        }
         handleReset();
     }
     return (
