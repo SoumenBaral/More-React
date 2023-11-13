@@ -17,8 +17,9 @@ const AddTask = ({tasks,setTasks}) => {
             name : taskRef.current.value,
             completed:Boolean(progress)
         }
-        console.log(task);
-        setTasks([...tasks,task])
+        if (task.name.length) {
+            setTasks([...tasks , task])
+        }
         handleReset();
     }
     return (
