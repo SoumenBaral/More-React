@@ -7,6 +7,7 @@ import ProductDetails from './components/ProductDetails';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Admin from './components/Admin';
+import NotFound from './components/NotFound';
 
 function App() {
   const user = false;
@@ -23,6 +24,7 @@ function App() {
             {/* just pass the parameter to vai route baby */}
             <Route path='contact' element={<Contact></Contact>}></Route> 
             <Route path='/admin' element ={user?<Admin></Admin> : <Navigate to={'/products'}></Navigate>}></Route>
+            <Route path='*' element={<NotFound></NotFound>}></Route>
           </Routes>
         </main>
         
