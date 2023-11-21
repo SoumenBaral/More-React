@@ -20,6 +20,7 @@ function App() {
             <Route path='products' element={<ProductsList></ProductsList>}></Route>
             <Route path='products/:id' element={<ProductDetails></ProductDetails>}></Route> 
             {/* Makes our route dynamic by the using of :id that why we can create lots of route using on routes */}
+            {/* just pass the parameter to vai route baby */}
             <Route path='contact' element={<Contact></Contact>}></Route> 
             <Route path='/admin' element ={user?<Admin></Admin> : <Navigate to={'/products'}></Navigate>}></Route>
           </Routes>
