@@ -9,6 +9,10 @@ const ProductsList = () => {
     const location = useLocation();
     console.log(location);
 
+    // Location will give you everything that SearchParams can .
+    // searchparams have some limitation but location will provide ?, hash , all query that you want
+    
+
     return (
         <div className='component'>
             <h1>Hi ProductsList</h1>
