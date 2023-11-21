@@ -1,12 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div style={{Display: "flex",justifyContent  : 'center'}}>
-            <div>
-            <p>2023 soumen </p>
-            </div>
-        </div>
+        <footer>
+            <Link to={'/'}>2023 soumen</Link>
+        </footer>
     );
 };
 

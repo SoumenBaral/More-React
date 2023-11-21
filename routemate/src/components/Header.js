@@ -8,9 +8,10 @@ const Header = () => {
            <span>RouteMate</span>
            </Link>
            <nav className='navigation'>
-            <NavLink to={'/'}>Home</NavLink>
-            <NavLink to={'products'}>Products</NavLink>
-            <NavLink to={'contact'}>Contact Us</NavLink>
+
+            <NavLink to={'/'} className={'link'} end >Home</NavLink>
+            <NavLink to={'products'} className={'link'}>Products</NavLink>
+            <NavLink to={'contact'} className={'link'}>Contact Us</NavLink>
 
            </nav>
         </header>
