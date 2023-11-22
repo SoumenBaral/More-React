@@ -4,7 +4,6 @@ import { useNavigate ,Outlet} from 'react-router-dom';
 const Contact = () => {
     const navigate = useNavigate();
     const handleSubmit =()=>{
-        console.log('------');
         return navigate('/')
       
     }

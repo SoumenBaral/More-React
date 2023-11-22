@@ -33,9 +33,9 @@ function App() {
 
 
             <Route path='/contact' element={<Contact></Contact>}>
-                <Route path="'in'"  Component={<ContactIn></ContactIn>}></Route>
-                <Route path='euro'  Component={<ContactEuro></ContactEuro>}></Route>
-                <Route path='usa'  Component={<ContactUSA></ContactUSA>}></Route>
+                <Route path="in"  element={<ContactIn></ContactIn>}></Route>
+                <Route path='euro'  element={<ContactEuro></ContactEuro>}></Route>
+                <Route path='usa'  element={<ContactUSA></ContactUSA>}></Route>
             </Route> 
 
 
