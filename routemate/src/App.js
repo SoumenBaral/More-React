@@ -1,16 +1,16 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Home';
-import ProductsList from './components/ProductsList';
-import ProductDetails from './components/ProductDetails';
+import Home from './pages/Home';
+import ProductsList from './pages/Products/ProductsList';
+import ProductDetails from './pages/Products/ProductDetails';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Admin from './components/Admin';
-import NotFound from './components/NotFound';
-import ContactIn from './components/ContactIn';
-import ContactEuro from './components/ContactEuro';
-import ContactUSA from './components/ContactUSA';
+import Contact from './pages/Contact/';
+import Admin from './pages/Admin';
+import NotFound from './pages/NotFound';
+import ContactIn from './pages/Contact/ContactIn';
+import ContactEuro from './pages/Contact/ContactEuro';
+import ContactUSA from './pages/Contact/ContactUSA';
 
 function App() {
   const user = false;
