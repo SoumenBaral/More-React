@@ -25,13 +25,20 @@ function App() {
             <Route path='products/:id' element={<ProductDetails></ProductDetails>}></Route> 
             {/* Makes our route dynamic by the using of :id that why we can create lots of route using on routes */}
             {/* just pass the parameter to vai route baby */}
-            <Route path='contact/in'  Component={<ContactIn></ContactIn>}></Route>
-            <Route path='contact/euro'  Component={<ContactEuro></ContactEuro>}></Route>
-            <Route path='contact/usa'  Component={<ContactUSA></ContactUSA>}></Route>
 
-            <Route path='contact' element={<Contact></Contact>}>
-              
+            {/* we can write like this ....... */}
+            {/* <Route path='contact/in'  Component={<ContactIn></ContactIn>}></Route>
+            <Route path='contact/euro'  Component={<ContactEuro></ContactEuro>}></Route>
+            <Route path='contact/usa'  Component={<ContactUSA></ContactUSA>}></Route> */}
+
+
+            <Route path='/contact' element={<Contact></Contact>}>
+                <Route path="'in'"  Component={<ContactIn></ContactIn>}></Route>
+                <Route path='euro'  Component={<ContactEuro></ContactEuro>}></Route>
+                <Route path='usa'  Component={<ContactUSA></ContactUSA>}></Route>
             </Route> 
+
+
             <Route path='/admin' element ={user?<Admin></Admin> : <Navigate to={'/products'}></Navigate>}></Route>
             <Route path='*' element={<NotFound></NotFound>}></Route>
           </Routes>
